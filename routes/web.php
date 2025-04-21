@@ -30,4 +30,12 @@ Route::prefix('karyawan')->name('karyawan.')->group(function () {
     // Menghapus karyawan berdasarkan ID
     Route::delete('/{id}', [KaryawanController::class, 'destroy'])->name('destroy');
     
+    Route::get('/', function () {
+        return view('home');
+    });
+    
+    Route::get('/karyawan', function () {
+        return view('karyawan');
+    });
+    
 });
