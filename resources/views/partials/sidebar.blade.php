@@ -26,6 +26,12 @@
                     Artikel
                 </a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link {{ request()->is('karyawan') ? 'active text-white' : '' }}" href="/karyawan">
+                    <i class="fas fa-users me-2"></i>
+                    Karyawan
+                </a>
+            </li>
         </ul>
     </div>
 </nav>
